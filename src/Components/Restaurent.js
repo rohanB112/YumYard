@@ -1,7 +1,6 @@
 import React from "react";
 import useRestaurantMenu from "../Hooks/useRestaurantMenu";
 import { useSelector } from "react-redux";
-import MenuItemCard from "./MenuItemCard";
 import MenuItemList from "./MenuItemList";
 
 const Restaurent = () => {
@@ -12,8 +11,6 @@ const Restaurent = () => {
   );
 
   const menuCards = menuItems?.[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards;
-
-  // console.log(menuCards);
 
   return !menuItems ? (
     <p>Loading...</p>

@@ -13,10 +13,6 @@ export const useRestaurant = () => {
   const getResturent = async () => {
     const data = await fetch(SWIGGY_API_URL);
     const json = await data.json();
-    // console.log(json);
-    // console.log(
-    //   json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants
-    // );
 
     dispatch(
       addRestaurants(

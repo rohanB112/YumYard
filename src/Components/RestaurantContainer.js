@@ -12,8 +12,6 @@ const RestaurantContainer = () => {
     (store) => store?.restaurantSlice?.restaurants
   );
 
-  console.log(restaurants);
-
   if (!restaurants) return <ShimmerUI />;
 
   return (

@@ -3,7 +3,6 @@ import MenuItemCard from "./MenuItemCard";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 
 const MenuItemList = ({ data }) => {
-  //   console.log(data);
   const { itemCards, title } = data;
 
   const [isShowItems, setIsShowItems] = useState(true);

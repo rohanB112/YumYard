@@ -13,7 +13,7 @@ const useRestaurantMenu = () => {
       SWIGGY_RESTAURANT_MENU_URL + "&restaurantId=" + id.resId
     );
     const json = await data.json();
-    console.log(json);
+
     dispatch(addRestaurantMenu(json?.data?.cards));
   };
 
